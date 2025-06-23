@@ -1,0 +1,58 @@
+@import '@/constants/colors.css';
+
+.switch-button {
+  position: relative;
+  display: inline-flex;
+  background: var(--color-bg-glass);
+  border-radius: 32px;
+  overflow: hidden;
+  min-width: 90px;
+  padding: 3px;
+  height: 36px;
+  border: 1px solid var(--color-border-blue);
+  box-shadow: 0 5px 5px var(--color-shadow-black);
+}
+
+.switch-button__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: calc(100% + 10%);
+  height: 100%;
+  filter: blur(0.5px);
+  box-shadow: 0 2px 6px 0 var(--color-shadow-blue);
+}
+
+.switch-button__btn {
+  position: relative;
+  z-index: 2;
+  flex: 1 1 0;
+  border: none;
+  background: none;
+  color: var(--color-text-secondary);
+  font-size: 1.12rem;
+  font-weight: 500;
+  margin: 0;
+  border-radius: 32px;
+  transition: color 0.5s, font-weight 0.2s;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+
+}
+
+.switch-button__bg--left {
+  left: 0;
+  background: var(--gradient-switch-left);
+}
+
+.switch-button__bg--right {
+  background: var(--gradient-switch-right);
+}
+
+.switch-button__btn--active {
+  font-weight: 700;
+  color: var(--color-text-white);
+  text-shadow: 0 1px 4px var(--color-shadow-text);
+}

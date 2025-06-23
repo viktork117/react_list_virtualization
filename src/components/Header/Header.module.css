@@ -1,0 +1,12 @@
+@import '@/constants/colors.css';
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding: 10px;
+  background: var(--color-bg-transparent);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 1px 20px var(--color-shadow-black);
+}

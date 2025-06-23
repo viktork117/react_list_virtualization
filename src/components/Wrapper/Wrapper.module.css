@@ -1,0 +1,20 @@
+@import '@/constants/colors.css';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+  
+  /*exp*/
+  border-radius: 10px;
+  background: var(--color-bg-transparent);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px); /* для Safari */
+  border: 0.5px solid var(--color-border-blue);
+  box-shadow: 0 40px 30px var(--color-shadow-black);
+
+  /*size*/
+  min-height: 60vh;
+  min-width: 40vw;
+}
